@@ -30,6 +30,5 @@ include_directories(
 ## Testing ##
 #############
 if(CATKIN_ENABLE_TESTING)
-  catkin_add_gtest(unittest_simple_gmock tests/unittest_simple_gmock.cpp)
-  target_link_libraries(unittest_simple_gmock gmock)
+  catkin_add_gmock(unittest_simple_gmock tests/unittest_simple_gmock.cpp)
 endif()
