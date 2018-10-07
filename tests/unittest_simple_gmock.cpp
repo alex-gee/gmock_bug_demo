@@ -12,6 +12,8 @@ public:
 TEST(TestSuite, testCase2)
 {
   FooMock mock;
+  EXPECT_CALL(mock, sayHello()).Times(1);
+  mock.sayHello();
 }
 
 // Run all the tests that were declared with TEST()
